@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Website</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Shop</h1>
+    </header>
+
+    <!-- Product Section -->
+    <section id="products">
+        <h2>Products</h2>
+        <div class="product-item" data-name="Product 1" data-price="100">
+            <img src="data:image/png;base64,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" alt="Product 1">
+            <p>Product 1</p>
+            <p>Rs.100</p>
+            <button onclick="addToCart('Product 1', 100)">Add to Cart</button>
+        </div>
+        <div class="product-item" data-name="Product 2" data-price="150">
+            <img src="data:image/jpeg;base64,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" alt="Product 2">
+            <p>Product 2</p>
+            <p>Rs.150</p>
+            <button onclick="addToCart('Product 2', 150)">Add to Cart</button>
+        </div>
+        <div class="product-item" data-name="Product 3" data-price="1200">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTINwBSaKfYoJZEvHwDxHLWdd9lHEQBVDXGug&s" alt="Product 3">
+            <p>Product 3</p>
+            <p>Rs.300</p>
+            <button onclick="addToCart('Product 3', 300)">Add to Cart</button>
+            </div>
+           
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Rs.<span id="total-price">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+
+        <!-- JavaScript -->
+        <script>
+            let itemCount = 0;
+            let totalPrice = 0;
+
+            function addToCart(productName, price) {
+                // Increment item count and total price
+                itemCount++;
+                totalPrice += price;
+
+                // Update cart message
+                document.getElementById("cartMessage").innerText = itemCount + " item" + (itemCount > 1 ? "s" : "") + " added";
+
+                // Display item in the cart
+                const cartItems = document.getElementById("cart-items");
+                const listItem = document.createElement("li");
+                listItem.textContent = productName + " - Rs." + price;
+                cartItems.appendChild(listItem);
+
+                // Update total price
+                document.getElementById("total-price").innerText = totalPrice;
+            }
+
+            function checkout() {
+                // Check if there are items in the cart
+                if (itemCount === 0) {
+                    alert("Cart is empty. Please add items to the cart before checking out.");
+                } else {
+                    // Redirect to a new page
+                    window.location.href = "newpage.html"; // Replace with your desired URL
+                }
+            }
+        </script>
+    </section>
+
+    
+    <script>
+        alert("Welcome to the shopping website")
+    </script>
+    <div class="cart-message" id="cartMessage">0 items added</div>
+
+    <script>
+        let itemCount = 0;
+
+        function addToCart(productName, price) {
+            itemCount++;
+            document.getElementById("cartMessage").innerText = itemCount + " item" + (itemCount > 1 ? "s" : "") + " added";
+        }
+    </script>
+
+    <script src="script.js"></script>
+    
+
+
+</body>
+</html>
